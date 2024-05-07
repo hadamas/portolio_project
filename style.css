@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-itens {
+    
+}
+
+a {
+    margin: 0 7px;
+    text-decoration: none;
+}
+
+/*   -------------------- MAIN --------------------------------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+section {
+    justify-content: center;
+}
+
+#profile-pic {
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+}
+
