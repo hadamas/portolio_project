@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Project</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <header>
@@ -18,25 +17,31 @@
             </div>
 
             <div class="nav-itens">
-                <img src="" alt="logo">
+                <img src="./assets/logo.png" alt="logo" id="logo">
             </div>
 
             <div class="nav-itens">
-                <a href="">Home</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <a href="#home">Home</a>
+                <button href="#projects" id="dropdown-item">Projects</button>
+                <ul class="dropdown-content" id="id_dropdown-content">
+                  <a href="#">Project 1</a>
+                  <a href="#">Project 2</a>
+                  <a href="#">Project 3</a>
+                  <a href="#">Project 4</a>
+                </ul>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="about-me">
-            <h2>About Me</h2>
-            <img src="" alt="profile-pic" id="profile-pic">
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        <section class="about-me" id="home">
+            <img src="./assets/profile-pic3.png" alt="profile-pic" id="profile-pic">
+            <h1>Alanis Hadama</h1>
+            <p>Portifolio Dev</p>
         </section>
 
-        <section class="cards">
+        <section class="cards" id="projects">
             <div class="card">
                 <img src="img_avatar.png" alt="Avatar" style="width:100%">section
                 section
@@ -50,7 +55,7 @@
 
               <div class="card">
                 <img src="img_avatar.png" alt="Avatar" style="width:100%">
-                <div class="container">
+                <div class="container" class="card-details">
                   <h4><b>Printf</b></h4>
                   <p>eque porro quisquam est qui</p>
                 </div>
@@ -58,7 +63,7 @@
 
               <div class="card">
                 <img src="img_avatar.png" alt="Avatar" style="width:100%">
-                <div class="container">
+                <div class="container" class="card-details">
                   <h4><b>Minitalk</b></h4>
                   <p>eque porro quisquam est qui</p>
                 </div>
@@ -66,7 +71,7 @@
 
               <div class="card">
                 <img src="img_avatar.png" alt="Avatar" style="width:100%">
-                <div class="container">
+                <div class="container" class="card-details">
                   <h4><b>So_long</b></h4>
                   <p>eque porro quisquam est qui</p>
                 </div>
@@ -75,7 +80,7 @@
 
     </main>
 
-    <footer>
+    <footer id="contact">
         <span>© ahadama- 2024</span>
         <div class="contact">
             <a href="">alanis.hadama@gmail.com</a>
@@ -83,7 +88,8 @@
         </div>
     </footer>
         
-    </section>    
 </body>
+
 <script src="script.js"></script>
+
 </html>
